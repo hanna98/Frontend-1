@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Säkerställer att sidan täcker hela skärmen */
+    
+}
+main {
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
+    
+} 
+
+.left, .right {
+    width: 15%;
+    background-color: #f0f0f0; 
+}
+
+.center {
+    flex: 1;
+    background-color: #ffffff; 
+}
+@media only screen and (max-width: 1027px) {
+    .left, .right {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1028px) and (max-width: 1250px) {
+    .left, .right {
+        width: 7%;
+    }
+}
